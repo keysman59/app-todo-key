@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-  
+    <div class="hello"></div>
     <div class="category" style="display:flex;">
       <h4 v-if="visibleCaption" @click.prevent="hideCaption" class="category-caption">{{text}}</h4>
       <div class="category-block" v-if="!visibleCaption">
@@ -20,6 +20,11 @@
 <!-- <input type="text"> -->
   </div>
 </template>
+
+<style lang="scss">
+ @import "../styles/views/About.scss";
+</style>
+
 
 <script>
 export default {
@@ -103,3 +108,4 @@ body {
 }
 
 </style>
+
