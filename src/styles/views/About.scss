@@ -1,0 +1,80 @@
+.wrapper {
+    // TOP
+    .top-block {
+        display: flex;
+        width: 60%;
+        }
+        .left-block {
+            width: 30%;
+            &:hover {
+                color: #212529;
+                background-color: #dae0e5;
+                border-color: #d3d9df;
+            &__caption {
+                // background: #f8f9fa;
+                // border-color: #f8f9fa;
+                // color: #212529;
+                // width: 30%;
+                // display: block;
+                // cursor: pointer;
+                // padding: 1.2em;
+            }
+            .category-block {
+                &__input {
+    
+                }
+                &__btn {
+    
+                }
+            }
+        }
+        .right-block {
+            width: 30%;
+            &:hover {
+                color: #212529;
+                background-color: #dae0e5;
+                border-color: #d3d9df;
+            }
+            .add-field {
+                margin-left: 15px;
+                background: #f8f9fa;
+                border: 1px solid #d3d9df;
+                color: #212529;
+                width: 85%;
+                display: block;
+                cursor: pointer;
+                padding: 1.2em;
+                display: flex;
+                align-items: center;
+                border-radius: 50px;
+        
+                &:hover {
+                    color: #212529;
+                    background-color: #dae0e5;
+                    border-color: #d3d9df;
+                }
+                &__icon {
+                    padding-left: 10px;
+                    font-size: 20px;
+                }
+                &__caption {
+                    padding-left: 10px;
+                }
+            }
+        }
+
+
+    }
+    // FIELD
+
+    // PROJECT
+    .add-project {
+        &__icon {
+
+        }
+    }
+}
+
+body {
+    font-family: Arial !important;
+}

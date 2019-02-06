@@ -1,24 +1,44 @@
 <template>
-  <div id="app">
-    <div class="hello"></div>
-    <div class="category" style="display:flex;">
-      <h4 v-if="visibleCaption" @click.prevent="hideCaption" class="category-caption">{{text}}</h4>
-      <div class="category-block" v-if="!visibleCaption">
-        <input v-model.lazy="text" class="category-input" type="text" />
-        <button href="#" @click.prevent="onClick" class="category-btn">Отправить</button>
-      </div>
-      <div style="">
-        <i class="fa fa-plus-circle"></i><h6>Добавить еще категорию...</h6>
+  <div class="wrapper" style="display:flex;">
+    <!-- Wrapper-caption -->
+    <div class="top-block">
+      <div class="left-block">
+        <h4 class="top-block__caption" v-if="visibleCaption" @click.prevent="hideCaption" >{{text}}</h4>
+        <div class="category-block" v-if="!visibleCaption">
+          <input v-model.lazy="text" class="category-block__input" type="text" />
+          <button href="#" @click.prevent="onClick" class="category-block__btn">Отправить</button>
+        </div>
       </div>
 
-      <p>visibleCaption:{{visibleCaption}}</p>  
-      <p>visibleBlock:{{visibleBlock}}</p>
-      <!-- <p>afterText:{{afterText}}</p>
-      <p>onClick():{{onClick()}}</p> -->
-      
+      <div class="right-block">
+        <div class="add-field">
+            <i class="fa fa-plus-circle add-field__icon"></i><h4 class="add-field__caption">Добавить еще категорию...</h4>
+          </div>
+        </div>  
+      </div>
+
+          <!-- Add-field -->
+
+
+
+
+    <!-- Add-project -->
+    <div class="add-project">
+      <i class="fa fa-plus-circle add-project__icon"></i>
     </div>
-<!-- <input type="text"> -->
+
+
+
+
+
+
+    <p>visibleCaption:{{visibleCaption}}</p>  
+    <p>visibleBlock:{{visibleBlock}}</p>
+    <!-- <p>afterText:{{afterText}}</p>
+    <p>onClick():{{onClick()}}</p> -->
+
   </div>
+<!-- <input type="text"> -->
 </template>
 
 <style lang="scss">
@@ -28,7 +48,6 @@
 
 <script>
 export default {
-  name: 'app',
   data () {
     return {
       visibleCaption: true,
@@ -75,37 +94,4 @@ export default {
 }
 </script>
 
-<style>
-
-body {
-  font-family: Arial;
-}
-
-.category-caption {
-  background: #f8f9fa;
-  border-color: #f8f9fa;
-  color: #212529;
-  width: 30%;
-  display: block;
-  cursor: pointer;
-  padding: 1.2em;
-}
-
-.category-block {
-  background: #f8f9fa;
-  border-color: #f8f9fa;
-  color: #212529;
-  width: 30%;
-  display: block;
-  cursor: pointer;
-  padding: 1.2em;
-}
-
-.category-caption:hover {
-  color: #212529;
-  background-color: #dae0e5;
-  border-color: #d3d9df;
-}
-
-</style>
 
