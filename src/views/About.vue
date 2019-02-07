@@ -1,7 +1,8 @@
 <template>
-  <div class="wrapper" style="display:flex;">
+  <div class="wrapper">
     <!-- Wrapper-caption -->
     <div class="top-block">
+
       <div class="left-block">
         <h4 class="top-block__caption" v-if="visibleCaption" @click.prevent="hideCaption" >{{text}}</h4>
         <div class="category-block" v-if="!visibleCaption">
@@ -10,17 +11,10 @@
         </div>
       </div>
 
-      <div class="right-block">
-        <div class="add-field">
-            <i class="fa fa-plus-circle add-field__icon"></i><h4 class="add-field__caption">Добавить еще категорию...</h4>
-          </div>
-        </div>  
-      </div>
-
-          <!-- Add-field -->
-
-
-
+      <div class="add-field">
+        <i class="fa fa-plus-circle add-field__icon"></i><h4 class="add-field__caption">Добавить еще категорию...</h4>
+      </div>  
+    </div>
 
     <!-- Add-project -->
     <div class="add-project">
@@ -31,9 +25,9 @@
 
 
 
-
+<!-- 
     <p>visibleCaption:{{visibleCaption}}</p>  
-    <p>visibleBlock:{{visibleBlock}}</p>
+    <p>visibleBlock:{{visibleBlock}}</p> -->
     <!-- <p>afterText:{{afterText}}</p>
     <p>onClick():{{onClick()}}</p> -->
 

@@ -3,13 +3,20 @@
     .top-block {
         display: flex;
         width: 60%;
-        }
         .left-block {
+            padding: 30px;
             width: 30%;
+            display: flex;
+            align-items: center;
+            background: #f8f9fa;
+            border: 1px solid #d3d9df;
+            color: #212529;
+            margin-left: 15px;
             &:hover {
                 color: #212529;
                 background-color: #dae0e5;
                 border-color: #d3d9df;
+                cursor: pointer;
             &__caption {
                 // background: #f8f9fa;
                 // border-color: #f8f9fa;
@@ -28,49 +35,51 @@
                 }
             }
         }
-        .right-block {
-            width: 30%;
+        .add-field {
+            padding: 30px;
+            display: flex;  
+            flex-direction: row;
+            margin-left: 15px;
+            background: #f8f9fa;
+            border: 1px solid #d3d9df;
+            color: #212529;
+            width: 85%;
+            display: block;
+            cursor: pointer;
+            padding: 1.2em;
+            display: flex;
+            align-items: center;
+            border-radius: 50px;
+
             &:hover {
                 color: #212529;
                 background-color: #dae0e5;
                 border-color: #d3d9df;
-            }
-            .add-field {
-                margin-left: 15px;
-                background: #f8f9fa;
-                border: 1px solid #d3d9df;
-                color: #212529;
-                width: 85%;
-                display: block;
                 cursor: pointer;
-                padding: 1.2em;
-                display: flex;
-                align-items: center;
-                border-radius: 50px;
-        
-                &:hover {
-                    color: #212529;
-                    background-color: #dae0e5;
-                    border-color: #d3d9df;
-                }
-                &__icon {
-                    padding-left: 10px;
-                    font-size: 20px;
-                }
-                &__caption {
-                    padding-left: 10px;
-                }
+            }
+            &__icon {
+                padding-left: 10px;
+                font-size: 20px;
+            }
+            &__caption {
+                padding-left: 10px;
             }
         }
+    }
 
 
     }
-    // FIELD
 
     // PROJECT
     .add-project {
+        padding: 30px;
+        width: 10%;
         &__icon {
-
+            font-size: 100px;
+            color: #28a745;
+        }
+        &:hover {
+            cursor: pointer;
         }
     }
 }
